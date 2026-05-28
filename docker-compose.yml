@@ -5,5 +5,5 @@ services:
       dockerfile: Dockerfile
     container_name: do-hiam-dxf-container
     ports:
-      - "8080:80"
+      - "${PORT:-8080}:80"
     restart: unless-stopped
