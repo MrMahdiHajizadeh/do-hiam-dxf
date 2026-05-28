@@ -17,7 +17,7 @@ export default function App() {
             <Compass className="w-5 h-5 animate-pulse" />
           </div>
           <span className="font-extrabold text-sm tracking-widest text-white uppercase bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-            ANTIGRAVITY <span className="text-cyan-400 font-medium">DXF</span>
+            DO HIAM <span className="text-cyan-400 font-medium">DXF</span>
           </span>
         </div>
 

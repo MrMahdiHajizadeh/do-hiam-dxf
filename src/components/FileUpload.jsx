@@ -268,7 +268,7 @@ EOF`;
     <div className="flex flex-col items-center justify-center w-full max-w-2xl px-6 py-12 mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-extrabold tracking-tight text-white mb-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
-          Vector DXF Analyzer & Interactive Renderer
+          Do Hiam DXF | Vector CAD Viewer
         </h2>
         <p className="text-zinc-400 text-sm max-w-md mx-auto">
           High-performance 3D CAD drawing viewer. Upload any standard DXF file or load our high-fidelity sample model.
