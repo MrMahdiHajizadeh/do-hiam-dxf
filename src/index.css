@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #09090b; /* zinc-950 */
+    color: #f4f4f5; /* zinc-100 */
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow: hidden;
+  }
+}
+
+/* Custom scrollbars for a premium, clean layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(9, 9, 11, 0.5); /* zinc-950 semi-transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(63, 63, 70, 0.4); /* zinc-700 semi-transparent */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 161, 170, 0.6); /* zinc-400 semi-transparent */
+}
+
+/* Custom pulse animations and effects for active CAD selections */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(234, 179, 8, 0.2), 0 0 12px rgba(234, 179, 8, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(234, 179, 8, 0.4), 0 0 20px rgba(234, 179, 8, 0.2);
+  }
+}
+
+.active-entity-shadow {
+  animation: neonPulse 2s infinite ease-in-out;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(24, 24, 27, 0.7); /* zinc-900 with transparency */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(63, 63, 70, 0.4); /* zinc-700 outline */
+}
